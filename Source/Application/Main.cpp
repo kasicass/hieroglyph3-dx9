@@ -10,6 +10,7 @@
 
 #include "PCH.h"
 #include "Application.h"
+#include "Log.h"
 
 using namespace Glyph3;
 
@@ -18,6 +19,7 @@ int WINAPI WinMain(	HINSTANCE h_Inst, HINSTANCE h_PrevInst,	LPSTR lpcmdline, int
 	Application* pApp = Application::GetApplication();
 	if (!pApp)
 	{
+		Log::Get().Write( L"There was no instance of the application." );
 		return -1;
 	}
 

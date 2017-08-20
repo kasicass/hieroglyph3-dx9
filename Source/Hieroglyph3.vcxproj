@@ -14,12 +14,14 @@
     <ClInclude Include="Application\Application.h" />
     <ClInclude Include="Application\FileSystem.h" />
     <ClInclude Include="Application\IWindowProc.h" />
+    <ClInclude Include="Utility\Log.h" />
     <ClInclude Include="Utility\PCH.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application\Application.cpp" />
     <ClCompile Include="Application\FileSystem.cpp" />
     <ClCompile Include="Application\Main.cpp" />
+    <ClCompile Include="Utility\Log.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{319617E3-0A66-4EBF-8FBA-73D15835D20B}</ProjectGuid>
