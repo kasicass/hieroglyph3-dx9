@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Hieroglyph3", "Source\Hieroglyph3.vcxproj", "{319617E3-0A66-4EBF-8FBA-73D15835D20B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BasicApplication", "Applications\BasicApplication\BasicApplication.vcxproj", "{0FCC1C7E-7C77-47D8-9B7C-8BDC7D907EB6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -13,6 +15,10 @@ Global
 		{319617E3-0A66-4EBF-8FBA-73D15835D20B}.Debug|Win32.Build.0 = Debug|Win32
 		{319617E3-0A66-4EBF-8FBA-73D15835D20B}.Release|Win32.ActiveCfg = Release|Win32
 		{319617E3-0A66-4EBF-8FBA-73D15835D20B}.Release|Win32.Build.0 = Release|Win32
+		{0FCC1C7E-7C77-47D8-9B7C-8BDC7D907EB6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0FCC1C7E-7C77-47D8-9B7C-8BDC7D907EB6}.Debug|Win32.Build.0 = Debug|Win32
+		{0FCC1C7E-7C77-47D8-9B7C-8BDC7D907EB6}.Release|Win32.ActiveCfg = Release|Win32
+		{0FCC1C7E-7C77-47D8-9B7C-8BDC7D907EB6}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

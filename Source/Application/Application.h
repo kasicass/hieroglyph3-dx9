@@ -47,6 +47,8 @@ namespace Glyph3
 		virtual void MessageLoop();
 		virtual LRESULT WindowProc(HWND hwnd, UINT msg, WPARAM wparam, LPARAM lparam) override;
 
+		void RequestTermination();
+
 	protected:
 		static Application* ms_pApplication;
 	};

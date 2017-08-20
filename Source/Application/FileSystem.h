@@ -49,7 +49,6 @@ namespace Glyph3
 
 	private:
 		
-		static std::wstring sLogFolder;
 		static std::wstring sDataFolder;
 		static std::wstring sModelsSubFolder;
 		static std::wstring sScriptsSubFolder;

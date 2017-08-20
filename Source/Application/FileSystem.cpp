@@ -15,7 +15,6 @@
 
 using namespace Glyph3;
 
-std::wstring FileSystem::sLogFolder        = L"../";
 std::wstring FileSystem::sDataFolder       = L"../Data/";
 std::wstring FileSystem::sModelsSubFolder  = L"Models/";
 std::wstring FileSystem::sScriptsSubFolder = L"Scripts/";
@@ -32,7 +31,7 @@ FileSystem::~FileSystem()
 
 std::wstring FileSystem::GetLogFolder()
 {
-	return sLogFolder;
+	return L"../../";
 /*
 	wchar_t buffer[MAX_PATH];
 
