@@ -12,11 +12,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application\Application.h" />
+    <ClInclude Include="Application\FileSystem.h" />
     <ClInclude Include="Application\IWindowProc.h" />
     <ClInclude Include="Utility\PCH.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application\Application.cpp" />
+    <ClCompile Include="Application\FileSystem.cpp" />
     <ClCompile Include="Application\Main.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
