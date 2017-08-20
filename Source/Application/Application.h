@@ -38,6 +38,13 @@ namespace Glyph3
 		static Application* GetApplication();
 
 		// Overloadable functions for end user
+		virtual bool ConfigureEngineComponents() = 0;
+		virtual void ShutdownEngineComponents() = 0;
+		virtual void Initialize() = 0;
+		virtual void Update() = 0;
+		virtual void Shutdown() = 0;
+
+		virtual void MessageLoop();
 		virtual LRESULT WindowProc(HWND hwnd, UINT msg, WPARAM wparam, LPARAM lparam) override;
 
 	protected:
