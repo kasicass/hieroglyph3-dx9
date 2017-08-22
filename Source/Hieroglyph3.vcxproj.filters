@@ -7,6 +7,9 @@
     <Filter Include="Application">
       <UniqueIdentifier>{2f707ec5-99ba-492b-93d3-4b920ef0965c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Mathematics">
+      <UniqueIdentifier>{6e7de505-9619-4f9f-9672-6eb24ea7e36e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Utility\PCH.h">
@@ -24,6 +27,21 @@
     <ClInclude Include="Utility\Log.h">
       <Filter>Utility</Filter>
     </ClInclude>
+    <ClInclude Include="Mathematics\Matrix3f.h">
+      <Filter>Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Mathematics\Matrix4f.h">
+      <Filter>Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Mathematics\Vector2f.h">
+      <Filter>Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Mathematics\Vector3f.h">
+      <Filter>Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Mathematics\Vector4f.h">
+      <Filter>Mathematics</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application\Application.cpp">
@@ -37,6 +55,21 @@
     </ClCompile>
     <ClCompile Include="Utility\Log.cpp">
       <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Mathematics\Matrix3f.cpp">
+      <Filter>Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Mathematics\Matrix4f.cpp">
+      <Filter>Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Mathematics\Vector2f.cpp">
+      <Filter>Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Mathematics\Vector3f.cpp">
+      <Filter>Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Mathematics\Vector4f.cpp">
+      <Filter>Mathematics</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -14,6 +14,11 @@
     <ClInclude Include="Application\Application.h" />
     <ClInclude Include="Application\FileSystem.h" />
     <ClInclude Include="Application\IWindowProc.h" />
+    <ClInclude Include="Mathematics\Matrix3f.h" />
+    <ClInclude Include="Mathematics\Matrix4f.h" />
+    <ClInclude Include="Mathematics\Vector2f.h" />
+    <ClInclude Include="Mathematics\Vector3f.h" />
+    <ClInclude Include="Mathematics\Vector4f.h" />
     <ClInclude Include="Utility\Log.h" />
     <ClInclude Include="Utility\PCH.h" />
   </ItemGroup>
@@ -21,6 +26,11 @@
     <ClCompile Include="Application\Application.cpp" />
     <ClCompile Include="Application\FileSystem.cpp" />
     <ClCompile Include="Application\Main.cpp" />
+    <ClCompile Include="Mathematics\Matrix3f.cpp" />
+    <ClCompile Include="Mathematics\Matrix4f.cpp" />
+    <ClCompile Include="Mathematics\Vector2f.cpp" />
+    <ClCompile Include="Mathematics\Vector3f.cpp" />
+    <ClCompile Include="Mathematics\Vector4f.cpp" />
     <ClCompile Include="Utility\Log.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -62,7 +72,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>Application;Utility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>Application;Mathematics;Utility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -70,6 +80,7 @@
     </Link>
     <PostBuildEvent>
       <Command>copy Application\*.h ..\SDK\Include
+copy Mathematics\*.h ..\SDK\Include
 copy Utility\*.h ..\SDK\Include
 </Command>
     </PostBuildEvent>
@@ -83,6 +94,7 @@ copy Utility\*.h ..\SDK\Include
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Application;Mathematics;Utility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -92,6 +104,7 @@ copy Utility\*.h ..\SDK\Include
     </Link>
     <PostBuildEvent>
       <Command>copy Application\*.h ..\SDK\Include
+copy Mathematics\*.h ..\SDK\Include
 copy Utility\*.h ..\SDK\Include
 </Command>
     </PostBuildEvent>
