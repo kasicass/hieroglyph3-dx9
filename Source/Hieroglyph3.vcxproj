@@ -21,6 +21,7 @@
     <ClInclude Include="Mathematics\Vector4f.h" />
     <ClInclude Include="Utility\Log.h" />
     <ClInclude Include="Utility\PCH.h" />
+    <ClInclude Include="Utility\TArray.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application\Application.cpp" />
@@ -32,6 +33,9 @@
     <ClCompile Include="Mathematics\Vector3f.cpp" />
     <ClCompile Include="Mathematics\Vector4f.cpp" />
     <ClCompile Include="Utility\Log.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Utility\TArray.inl" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{319617E3-0A66-4EBF-8FBA-73D15835D20B}</ProjectGuid>

@@ -42,6 +42,9 @@
     <ClInclude Include="Mathematics\Vector4f.h">
       <Filter>Mathematics</Filter>
     </ClInclude>
+    <ClInclude Include="Utility\TArray.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application\Application.cpp">
@@ -71,5 +74,10 @@
     <ClCompile Include="Mathematics\Vector4f.cpp">
       <Filter>Mathematics</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Utility\TArray.inl">
+      <Filter>Utility</Filter>
+    </None>
   </ItemGroup>
 </Project>
