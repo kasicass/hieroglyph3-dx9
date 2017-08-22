@@ -14,6 +14,8 @@
     <ClInclude Include="Application\Application.h" />
     <ClInclude Include="Application\FileSystem.h" />
     <ClInclude Include="Application\IWindowProc.h" />
+    <ClInclude Include="Application\RenderWindow.h" />
+    <ClInclude Include="Application\Win32RenderWindow.h" />
     <ClInclude Include="Mathematics\Matrix3f.h" />
     <ClInclude Include="Mathematics\Matrix4f.h" />
     <ClInclude Include="Mathematics\Vector2f.h" />
@@ -27,6 +29,8 @@
     <ClCompile Include="Application\Application.cpp" />
     <ClCompile Include="Application\FileSystem.cpp" />
     <ClCompile Include="Application\Main.cpp" />
+    <ClCompile Include="Application\RenderWindow.cpp" />
+    <ClCompile Include="Application\Win32RenderWindow.cpp" />
     <ClCompile Include="Mathematics\Matrix3f.cpp" />
     <ClCompile Include="Mathematics\Matrix4f.cpp" />
     <ClCompile Include="Mathematics\Vector2f.cpp" />

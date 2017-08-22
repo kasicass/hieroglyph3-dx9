@@ -45,6 +45,12 @@
     <ClInclude Include="Utility\TArray.h">
       <Filter>Utility</Filter>
     </ClInclude>
+    <ClInclude Include="Application\RenderWindow.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Win32RenderWindow.h">
+      <Filter>Application</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application\Application.cpp">
@@ -73,6 +79,12 @@
     </ClCompile>
     <ClCompile Include="Mathematics\Vector4f.cpp">
       <Filter>Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\RenderWindow.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Win32RenderWindow.cpp">
+      <Filter>Application</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

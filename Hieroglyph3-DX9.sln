@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Hieroglyph3", "Source\Hieroglyph3.vcxproj", "{319617E3-0A66-4EBF-8FBA-73D15835D20B}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BasicApplication", "Applications\BasicApplication\BasicApplication.vcxproj", "{0FCC1C7E-7C77-47D8-9B7C-8BDC7D907EB6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{319617E3-0A66-4EBF-8FBA-73D15835D20B} = {319617E3-0A66-4EBF-8FBA-73D15835D20B}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

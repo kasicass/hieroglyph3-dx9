@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Application.h"
+#include "Win32RenderWindow.h"
 
 using namespace Glyph3;
 
@@ -20,6 +21,6 @@ public:
 	virtual std::wstring GetName();
 
 protected:
-
+	Win32RenderWindow*    m_pWindow;
 };
 
