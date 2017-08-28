@@ -16,6 +16,28 @@
     <ClInclude Include="Application\IWindowProc.h" />
     <ClInclude Include="Application\RenderWindow.h" />
     <ClInclude Include="Application\Win32RenderWindow.h" />
+    <ClInclude Include="Events\EventManager.h" />
+    <ClInclude Include="Events\EvtChar.h" />
+    <ClInclude Include="Events\EvtErrorMessage.h" />
+    <ClInclude Include="Events\EvtFrameStart.h" />
+    <ClInclude Include="Events\EvtInfoMessage.h" />
+    <ClInclude Include="Events\EvtKeyboardMsg.h" />
+    <ClInclude Include="Events\EvtKeyDown.h" />
+    <ClInclude Include="Events\EvtKeyUp.h" />
+    <ClInclude Include="Events\EvtMouseLButtonDown.h" />
+    <ClInclude Include="Events\EvtMouseLButtonUp.h" />
+    <ClInclude Include="Events\EvtMouseLeave.h" />
+    <ClInclude Include="Events\EvtMouseMButtonDown.h" />
+    <ClInclude Include="Events\EvtMouseMButtonUp.h" />
+    <ClInclude Include="Events\EvtMouseMove.h" />
+    <ClInclude Include="Events\EvtMouseMsg.h" />
+    <ClInclude Include="Events\EvtMouseRButtonDown.h" />
+    <ClInclude Include="Events\EvtMouseRButtonUp.h" />
+    <ClInclude Include="Events\EvtMouseWheel.h" />
+    <ClInclude Include="Events\EvtWindowMsg.h" />
+    <ClInclude Include="Events\EvtWindowResize.h" />
+    <ClInclude Include="Events\IEvent.h" />
+    <ClInclude Include="Events\IEventListener.h" />
     <ClInclude Include="Mathematics\Matrix3f.h" />
     <ClInclude Include="Mathematics\Matrix4f.h" />
     <ClInclude Include="Mathematics\Vector2f.h" />
@@ -24,6 +46,7 @@
     <ClInclude Include="Utility\Log.h" />
     <ClInclude Include="Utility\PCH.h" />
     <ClInclude Include="Utility\TArray.h" />
+    <ClInclude Include="Utility\Timer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application\Application.cpp" />
@@ -31,12 +54,34 @@
     <ClCompile Include="Application\Main.cpp" />
     <ClCompile Include="Application\RenderWindow.cpp" />
     <ClCompile Include="Application\Win32RenderWindow.cpp" />
+    <ClCompile Include="Events\EventManager.cpp" />
+    <ClCompile Include="Events\EvtChar.cpp" />
+    <ClCompile Include="Events\EvtErrorMessage.cpp" />
+    <ClCompile Include="Events\EvtFrameStart.cpp" />
+    <ClCompile Include="Events\EvtInfoMessage.cpp" />
+    <ClCompile Include="Events\EvtKeyboardMsg.cpp" />
+    <ClCompile Include="Events\EvtKeyDown.cpp" />
+    <ClCompile Include="Events\EvtKeyUp.cpp" />
+    <ClCompile Include="Events\EvtMouseLButtonDown.cpp" />
+    <ClCompile Include="Events\EvtMouseLButtonUp.cpp" />
+    <ClCompile Include="Events\EvtMouseLeave.cpp" />
+    <ClCompile Include="Events\EvtMouseMButtonDown.cpp" />
+    <ClCompile Include="Events\EvtMouseMButtonUp.cpp" />
+    <ClCompile Include="Events\EvtMouseMove.cpp" />
+    <ClCompile Include="Events\EvtMouseMsg.cpp" />
+    <ClCompile Include="Events\EvtMouseRButtonDown.cpp" />
+    <ClCompile Include="Events\EvtMouseRButtonUp.cpp" />
+    <ClCompile Include="Events\EvtMouseWheel.cpp" />
+    <ClCompile Include="Events\EvtWindowMsg.cpp" />
+    <ClCompile Include="Events\EvtWindowResize.cpp" />
+    <ClCompile Include="Events\IEventListener.cpp" />
     <ClCompile Include="Mathematics\Matrix3f.cpp" />
     <ClCompile Include="Mathematics\Matrix4f.cpp" />
     <ClCompile Include="Mathematics\Vector2f.cpp" />
     <ClCompile Include="Mathematics\Vector3f.cpp" />
     <ClCompile Include="Mathematics\Vector4f.cpp" />
     <ClCompile Include="Utility\Log.cpp" />
+    <ClCompile Include="Utility\Timer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Utility\TArray.inl" />
@@ -80,7 +125,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>Application;Mathematics;Utility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>Application;Mathematics;Utility;Events;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -89,8 +134,9 @@
     <PostBuildEvent>
       <Command>copy Application\*.h ..\SDK\Include
 copy Mathematics\*.h ..\SDK\Include
+copy Events\*.h ..\SDK\Include
 copy Utility\*.h ..\SDK\Include
-</Command>
+copy Utility\*.inl ..\SDK\Include</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -102,7 +148,7 @@ copy Utility\*.h ..\SDK\Include
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>Application;Mathematics;Utility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>Application;Mathematics;Utility;Events;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -113,8 +159,9 @@ copy Utility\*.h ..\SDK\Include
     <PostBuildEvent>
       <Command>copy Application\*.h ..\SDK\Include
 copy Mathematics\*.h ..\SDK\Include
+copy Events\*.h ..\SDK\Include
 copy Utility\*.h ..\SDK\Include
-</Command>
+copy Utility\*.inl ..\SDK\Include</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

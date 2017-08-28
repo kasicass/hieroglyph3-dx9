@@ -24,11 +24,15 @@
 
 #include "PCH.h"
 
+#include "IEventListener.h"
 #include "IWindowProc.h"
+
+#include "EventManager.h"
+#include "Timer.h"
 
 namespace Glyph3
 {
-	class Application : public IWindowProc
+	class Application : public IEventListener, public IWindowProc
 	{
 	public:
 		Application();
@@ -47,7 +51,15 @@ namespace Glyph3
 		virtual void MessageLoop();
 		virtual LRESULT WindowProc(HWND hwnd, UINT msg, WPARAM wparam, LPARAM lparam) override;
 
+		virtual bool HandleEvent( IEvent* pEvent ) override;
+
 		void RequestTermination();
+
+	protected:
+		Timer *m_pTimer;
+
+	private:
+		EventManager *m_pEventMgr;
 
 	protected:
 		static Application* ms_pApplication;

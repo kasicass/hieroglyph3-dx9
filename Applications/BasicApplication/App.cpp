@@ -37,6 +37,7 @@ void App::Initialize()
 
 void App::Update()
 {
+	m_pTimer->Update();
 }
 
 void App::Shutdown()
