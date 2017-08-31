@@ -43,6 +43,8 @@
     <ClInclude Include="Mathematics\Vector2f.h" />
     <ClInclude Include="Mathematics\Vector3f.h" />
     <ClInclude Include="Mathematics\Vector4f.h" />
+    <ClInclude Include="Rendering\IRenderer.h" />
+    <ClInclude Include="Rendering\RendererDX9.h" />
     <ClInclude Include="Utility\Log.h" />
     <ClInclude Include="Utility\PCH.h" />
     <ClInclude Include="Utility\TArray.h" />
@@ -80,6 +82,7 @@
     <ClCompile Include="Mathematics\Vector2f.cpp" />
     <ClCompile Include="Mathematics\Vector3f.cpp" />
     <ClCompile Include="Mathematics\Vector4f.cpp" />
+    <ClCompile Include="Rendering\RendererDX9.cpp" />
     <ClCompile Include="Utility\Log.cpp" />
     <ClCompile Include="Utility\Timer.cpp" />
   </ItemGroup>
@@ -136,7 +139,8 @@
 copy Mathematics\*.h ..\SDK\Include
 copy Events\*.h ..\SDK\Include
 copy Utility\*.h ..\SDK\Include
-copy Utility\*.inl ..\SDK\Include</Command>
+copy Utility\*.inl ..\SDK\Include
+copy Rendering\*.h ..\SDK\Include</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -161,7 +165,8 @@ copy Utility\*.inl ..\SDK\Include</Command>
 copy Mathematics\*.h ..\SDK\Include
 copy Events\*.h ..\SDK\Include
 copy Utility\*.h ..\SDK\Include
-copy Utility\*.inl ..\SDK\Include</Command>
+copy Utility\*.inl ..\SDK\Include
+copy Rendering\*.h ..\SDK\Include</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

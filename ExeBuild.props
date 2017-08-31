@@ -9,7 +9,7 @@
   <ItemDefinitionGroup>
     <Link>
       <AdditionalLibraryDirectories>$(SolutionDir)SDK\Library\$(Configuration)_$(PlatformShortName)\</AdditionalLibraryDirectories>
-      <AdditionalDependencies>Hieroglyph3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Hieroglyph3.lib;d3d9.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ClCompile>
       <AdditionalIncludeDirectories>$(SolutionDir)SDK\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>

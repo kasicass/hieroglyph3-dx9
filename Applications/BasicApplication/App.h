@@ -2,6 +2,7 @@
 
 #include "Application.h"
 #include "Win32RenderWindow.h"
+#include "RendererDX9.h"
 
 using namespace Glyph3;
 
@@ -21,6 +22,7 @@ public:
 	virtual std::wstring GetName();
 
 protected:
-	Win32RenderWindow*    m_pWindow;
+	Win32RenderWindow* m_pWindow;
+	RendererDX9* m_pRenderer9;
 };
 

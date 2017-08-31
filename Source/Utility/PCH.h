@@ -35,7 +35,7 @@
 #define WIN32_LEAN_AND_MEAN
 #endif
 #include <Windows.h>
-//#include <d3d11.h>
+#include <d3d9.h>
 //#include <d3dCompiler.h>
 //#include <d3dx11.h>
 
